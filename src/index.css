@@ -1,11 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --color-primary: #00aed6;
-  --color-light: #fafafa;
-  --color-dark: #444;
-  --color-dark-transparent: rgba(68, 68, 68, 0.1);
+  --color-primary: #61dafb;
+  --color-secondary: #dc143c;
+  --color-light: #f7f7f7;
+  --color-light-transparent: rgba(247, 247, 247, 0.1);
+  --color-dark: #20232a;
   --transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  height: 10%;
+  border-radius: 10px;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-dark);
 }
 
 * {
@@ -34,8 +54,8 @@ body {
   letter-spacing: 0.5px;
   line-height: 1.5;
   font-weight: 400;
-  background-color: var(--color-light);
-  color: var(--color-dark);
+  background-color: var(--color-dark);
+  color: var(--color-light);
 }
 
 .wrapper {
@@ -46,28 +66,31 @@ body {
   gap: 5rem;
 }
 
-.btn {
-  background-color: var(--color-primary);
+/* .btn {
+  align-self: flex-start;
+  background-color: var(--color-secondary);
   color: var(--color-light);
   font-family: inherit;
   font-size: 1.6rem;
   font-weight: 500;
-  padding: 0.5rem 1.5rem;
-  border-radius: 50px;
+  border-radius: 2px;
+  margin-top: 1rem;
+  padding: 0.75rem 1.75rem;
   cursor: pointer;
   transition: var(--transition);
 }
 
 .btn:hover {
-  background-color: var(--color-dark);
-}
+  background-color: var(--color-light);
+  color: var(--color-secondary);
+} */
 
 .navbar {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 2rem 0;
-  border-bottom: 1px solid var(--color-dark-transparent);
+  border-bottom: 1px solid var(--color-light-transparent);
 }
 
 .navbar h1 {
@@ -85,7 +108,7 @@ body {
 .links a:link,
 .links a:visited {
   display: inline-block;
-  color: var(--color-dark);
+  color: var(--color-light);
   transition: all 0.3s ease-in-out;
 }
 
@@ -101,18 +124,31 @@ body {
   padding: 0 5rem;
 }
 
-.blogs {
+.home {
   display: flex;
   flex-direction: column;
   gap: 5rem;
 }
 
-.blog {
+.section-title {
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.blog-list {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  border-bottom: 1px solid var(--color-dark-transparent);
+  margin-bottom: 5rem;
   padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-light-transparent);
 }
 
 .blog-title {
@@ -123,14 +159,14 @@ body {
 
 .blog-author {
   color: var(--color-primary);
-  opacity: 0.75;
 }
 
 .blog-body {
-  text-align: justify;
+  font-weight: 300;
 }
 
-.btn-blog {
-  align-self: flex-start;
-  margin-top: 2rem;
+.feedback {
+  font-size: 2rem;
+  padding-top: 5rem;
+  color: var(--color-primary);
 }

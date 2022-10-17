@@ -1,36 +1,33 @@
-import { useState } from "react";
-import { Blog } from "./Blog";
+import { useEffect, useState } from "react";
+import BlogList from "./BlogList";
+import ErrorMsg from "./ErrorMsg";
 
 const Home = () => {
-  const [blogs, setBlogs] = useState([
-    {
-      id: 1,
-      title: "Learn React in 30 days",
-      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur, suscipit est tempore labore aperiam! Blanditiis debitis beatae doloribus odit sequi. Voluptates est beatae dolor tenetur quo temporibus consequuntur ullam?",
-      author: "Shohan",
-      publishedDate: "2022-10-17T12:00:35.846Z",
-    },
-    {
-      id: 2,
-      title: "Grid area can makes your life easier",
-      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur, suscipit est tempore labore aperiam! Blanditiis debitis beatae doloribus odit sequi. Voluptates est beatae dolor tenetur quo temporibus consequuntur ullam?",
-      author: "Tumpa",
-      publishedDate: "2022-10-16T14:00:44.342Z",
-    },
-    {
-      id: 3,
-      title: "UDEMY offers 30% OFF! on all courses",
-      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur, suscipit est tempore labore aperiam! Blanditiis debitis beatae doloribus odit sequi. Voluptates est beatae dolor tenetur quo temporibus consequuntur ullam?",
-      author: "Ayesha",
-      publishedDate: "2022-10-15T11:00:41.345Z",
-    },
-  ]);
+  const [blogs, setBlogs] = useState(null);
+  const [isPending, setIsPending] = useState(true);
+  const [errorMsg, setErrorMsg] = useState(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      fetch("http://localhost:8000/blogs")
+        .then((res) => {
+          if (!res.ok) throw new Error("Something went wrong");
+          return res.json();
+        })
+        .then((data) => {
+          setBlogs(data);
+          setIsPending(false);
+        })
+        .catch((err) => {
+          setErrorMsg(err.message);
+        });
+    }, 1000);
+  }, []);
 
   return (
-    <div className="blogs">
-      {blogs.map((blog) => (
-        <Blog key={blog.id} data={blog} />
-      ))}
+    <div className="home">
+      {isPending && <ErrorMsg msg={!errorMsg ? "Loading..." : errorMsg} />}
+      {blogs && <BlogList blogs={blogs} secTitle={"All Blogs"} />}
     </div>
   );
 };
