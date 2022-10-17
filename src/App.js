@@ -1,16 +1,31 @@
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
+import About from "./components/About";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Create } from "./components/Create";
 
 const App = () => {
   return (
-    <div className="wrapper">
-      <Navbar />
-      <div className="content">
-        <Home />
+    <Router>
+      <div className="wrapper">
+        <Navbar />
+        <div className="content">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/create">
+              <Create />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+          </Switch>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </Router>
   );
 };
 

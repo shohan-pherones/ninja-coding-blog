@@ -172,6 +172,20 @@ body {
   color: var(--color-primary);
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about h2 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.about p {
+  font-weight: 300;
+}
+
 footer {
   text-align: center;
   padding: 5rem 0;
