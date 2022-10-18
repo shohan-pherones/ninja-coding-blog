@@ -3,6 +3,7 @@
     {
       "id": 1,
       "title": "Learn React in 30 days",
+      "img": "https://www.loginradius.com/blog/static/00a89fc56461ea1529439d89072c93f1/701ee/react.jpg",
       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae sapiente perspiciatis provident, exercitationem est autem doloremque cupiditate corrupti cum error reiciendis praesentium blanditiis. Commodi libero aliquid officia vero debitis enim quidem inventore itaque temporibus vel nulla laudantium, sit non atque autem, quia nihil at impedit optio! Deleniti animi quis necessitatibus maiores est rerum suscipit recusandae voluptas harum, temporibus a aliquam provident laboriosam aliquid corporis delectus sed iure illo quo facere quidem non minus distinctio. Cumque nam consequuntur voluptate, rerum facilis incidunt fugiat atque illo libero dicta veritatis qui voluptatibus sit possimus repellendus quibusdam corrupti neque delectus, labore debitis aperiam!",
       "author": "Shohan",
       "publishedDate": "2022-10-17T12:00:35.846Z"
@@ -10,6 +11,7 @@
     {
       "id": 2,
       "title": "Grid areas can make your life easier",
+      "img": "https://webkit.org/wp-content/uploads/grid-placement.png",
       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae sapiente perspiciatis provident, exercitationem est autem doloremque cupiditate corrupti cum error reiciendis praesentium blanditiis. Commodi libero aliquid officia vero debitis enim quidem inventore itaque temporibus vel nulla laudantium, sit non atque autem, quia nihil at impedit optio! Deleniti animi quis necessitatibus maiores est rerum suscipit recusandae voluptas harum, temporibus a aliquam provident laboriosam aliquid corporis delectus sed iure illo quo facere quidem non minus distinctio. Cumque nam consequuntur voluptate, rerum facilis incidunt fugiat atque illo libero dicta veritatis qui voluptatibus sit possimus repellendus quibusdam corrupti neque delectus, labore debitis aperiam!",
       "author": "Tumpa",
       "publishedDate": "2022-10-16T14:00:44.342Z"
@@ -17,16 +19,10 @@
     {
       "id": 3,
       "title": "UDEMY offers 30% OFF! on all courses",
+      "img": "https://static.startuptalky.com/2021/04/Udemy-startuptalky.jpg",
       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae sapiente perspiciatis provident, exercitationem est autem doloremque cupiditate corrupti cum error reiciendis praesentium blanditiis. Commodi libero aliquid officia vero debitis enim quidem inventore itaque temporibus vel nulla laudantium, sit non atque autem, quia nihil at impedit optio! Deleniti animi quis necessitatibus maiores est rerum suscipit recusandae voluptas harum, temporibus a aliquam provident laboriosam aliquid corporis delectus sed iure illo quo facere quidem non minus distinctio. Cumque nam consequuntur voluptate, rerum facilis incidunt fugiat atque illo libero dicta veritatis qui voluptatibus sit possimus repellendus quibusdam corrupti neque delectus, labore debitis aperiam!",
       "author": "Ayesha",
       "publishedDate": "2022-10-15T11:00:41.345Z"
-    },
-    {
-      "id": 4,
-      "title": "The best JavaScript animation library is GSAP",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae sapiente perspiciatis provident, exercitationem est autem doloremque cupiditate corrupti cum error reiciendis praesentium blanditiis. Commodi libero aliquid officia vero debitis enim quidem inventore itaque temporibus vel nulla laudantium, sit non atque autem, quia nihil at impedit optio! Deleniti animi quis necessitatibus maiores est rerum suscipit recusandae voluptas harum, temporibus a aliquam provident laboriosam aliquid corporis delectus sed iure illo quo facere quidem non minus distinctio. Cumque nam consequuntur voluptate, rerum facilis incidunt fugiat atque illo libero dicta veritatis qui voluptatibus sit possimus repellendus quibusdam corrupti neque delectus, labore debitis aperiam!",
-      "author": "Ayesha",
-      "publishedDate": "2022-10-14T10:00:48.247Z"
     }
   ]
 }
