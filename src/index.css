@@ -259,6 +259,22 @@ input[type="file"] {
   font-weight: 300;
 }
 
+.not-found {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.not-found h2 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.not-found-link {
+  align-self: flex-start;
+}
+
 footer {
   text-align: center;
   padding: 5rem 0;
